@@ -11,12 +11,13 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 @Mod(AdditionalBarsBYG.MODID)
 public class AdditionalBarsBYG
 {
+	//TODO: add BYG blocks and items
 	public static final String MODID = "additionalbarsbyg";
 	public AdditionalBarsBYG() {
 		final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-		ABBlocks.BYG_BLOCKS.register(modEventBus);
-		ABItems.BYG_ITEMS.register(modEventBus);
+		//ABBlocks.BYG_BLOCKS.register(modEventBus);
+		//ABItems.BYG_ITEMS.register(modEventBus);
 
 		MinecraftForge.EVENT_BUS.register(this);
 
