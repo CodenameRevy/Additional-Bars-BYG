@@ -9,30 +9,13 @@ version="${file.jarVersion}" #mandatory
 displayName="Additional Bars (Oh the Biomes you'll go Addon)" #mandatory
 displayURL="codenamerevy.github.io" #optional
 logoFile="logo.png" #optional
-credits='''
-CodenameRevy (Mod Developer),
-ruchom4u (Spanish Translations),
-fantasyair18 (Chinese Traditional (Taiwan) Translations),
-TheDirectorX, BardinTheDwarf (Russian Translations),
-Zijuna (German Translations),
-justmonika (Simple Chinese Translations),
-mindy15963 (Korean Translations),
-WadeMason''' #optional
+credits='''CodenameRevy (Mod Developer), ruchom4u (Spanish Translations), fantasyair18 (Chinese Traditional (Taiwan) Translations), TheDirectorX, BardinTheDwarf (Russian Translations), Zijuna (German Translations), justmonika (Simple Chinese Translations), mindy15963 (Korean Translations), WadeMason''' #optional
 authors="CodenameRevy" #optional
-description='''
-This mod adds additional bars to the game that go along with Iron Bars!
-'''
+description='''Support for Oh The Biomes Youll Go wood types for Additional Bars'''
 
 [[dependencies.additionalbarsbyg]] #optional
-    modId="forge" #mandatory
+    modId="additionalbars" #mandatory
     mandatory=true #mandatory
-    versionRange="[35, 36,)" #mandatory
-    ordering="NONE"
-    side="BOTH"
-
-[[dependencies.additionalbarsbyg]]
-    modId="minecraft"
-    mandatory=true
-    versionRange="[1.16.4,)"
-    ordering="NONE"
+    versionRange="[2,)" #mandatory
+    ordering="AFTER"
     side="BOTH"
