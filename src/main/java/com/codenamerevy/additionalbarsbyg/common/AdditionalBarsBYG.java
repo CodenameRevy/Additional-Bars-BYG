@@ -1,8 +1,6 @@
-package com.codenamerevy.additionalbarsbyg;
+package com.codenamerevy.additionalbarsbyg.common;
 
 import com.codenamerevy.additionalbars.common.AdditionalBars;
-import com.codenamerevy.additionalbars.common.registry.ABBlocks;
-import com.codenamerevy.additionalbars.common.registry.ABItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
