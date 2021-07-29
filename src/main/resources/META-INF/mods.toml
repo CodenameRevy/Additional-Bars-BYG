@@ -1,6 +1,6 @@
 license="MIT License"
 modLoader="javafml" #mandatory
-loaderVersion="[35, 36,)" #mandatory
+loaderVersion="[37,)" #mandatory
 issueTrackerURL="https://github.com/CodenameRevy/Additional-Bars/issues" #optional
 
 [[mods]] #mandatory
@@ -17,5 +17,12 @@ description='''Support for Oh The Biomes Youll Go wood types for Additional Bars
     modId="additionalbars" #mandatory
     mandatory=true #mandatory
     versionRange="[2,)" #mandatory
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.additionalbarsbop]] #optional
+    modId="byg" #mandatory
+    mandatory=false #mandatory
+    versionRange="[1,)" #mandatory
     ordering="AFTER"
     side="BOTH"
