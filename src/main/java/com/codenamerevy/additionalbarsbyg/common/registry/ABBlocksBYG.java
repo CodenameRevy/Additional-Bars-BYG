@@ -12,7 +12,6 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;
-import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fmllegacy.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -142,7 +141,7 @@ public class ABBlocksBYG {
 
 
 	private static IronBarsBlock createBarsBlock() {
-		return new IronBarsBlock(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.WOOD).sound(SoundType.WOOD).harvestTool(ToolType.AXE).harvestLevel(0).strength(3.0F, 4.0F).noOcclusion().isValidSpawn(ABBlocksBYG::never).isViewBlocking(ABBlocksBYG::never).isSuffocating(ABBlocksBYG::never).isRedstoneConductor(ABBlocksBYG::never));
+		return new IronBarsBlock(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.WOOD).sound(SoundType.WOOD).strength(3.0F, 4.0F).noOcclusion().isValidSpawn(ABBlocksBYG::never).isViewBlocking(ABBlocksBYG::never).isSuffocating(ABBlocksBYG::never).isRedstoneConductor(ABBlocksBYG::never));
 	}
 //
 //	private static PaneBlock createBarsBlock(Material material, MaterialColor color, SoundType sound) {
@@ -154,7 +153,7 @@ public class ABBlocksBYG {
 //	}
 
 	private static HorizontalBarsSlabBlock createHorizontalBarsBlock() {
-		return new HorizontalBarsSlabBlock(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.WOOD).sound(SoundType.WOOD).harvestTool(ToolType.AXE).harvestLevel(0).strength(3.0F, 4.0F).noOcclusion().isValidSpawn(ABBlocksBYG::never).isViewBlocking(ABBlocksBYG::never).isSuffocating(ABBlocksBYG::never).isRedstoneConductor(ABBlocksBYG::never));
+		return new HorizontalBarsSlabBlock(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.WOOD).sound(SoundType.WOOD).strength(3.0F, 4.0F).noOcclusion().isValidSpawn(ABBlocksBYG::never).isViewBlocking(ABBlocksBYG::never).isSuffocating(ABBlocksBYG::never).isRedstoneConductor(ABBlocksBYG::never));
 	}
 
 //	private static HorizontalBarsSlabBlock createHorizontalBarsBlock(Material material, MaterialColor color, SoundType sound) {
