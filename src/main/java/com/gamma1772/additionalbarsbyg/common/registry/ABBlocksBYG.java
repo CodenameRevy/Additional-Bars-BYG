@@ -140,26 +140,10 @@ public class ABBlocksBYG {
 	private static PaneBlock createBarsBlock() {
 		return new PaneBlock(AbstractBlock.Properties.of(Material.WOOD, MaterialColor.WOOD).sound(SoundType.WOOD).harvestTool(ToolType.AXE).harvestLevel(0).strength(3.0F, 4.0F).noOcclusion().isValidSpawn(ABBlocksBYG::never).isViewBlocking(ABBlocksBYG::never).isSuffocating(ABBlocksBYG::never).isRedstoneConductor(ABBlocksBYG::never));
 	}
-//
-//	private static PaneBlock createBarsBlock(Material material, MaterialColor color, SoundType sound) {
-//		return new PaneBlock(AbstractBlock.Properties.create(material, color).sound(sound).harvestTool(ToolType.AXE).harvestLevel(0).hardnessAndResistance(3.0f, 4.0f).notSolid().setAllowsSpawn(ABBlocksBYG::never).setOpaque(ABBlocksBYG::never).setSuffocates(ABBlocksBYG::never).setBlocksVision(ABBlocksBYG::never));
-//	}
-//
-//	private static PaneBlock createBarsBlock(Material material, MaterialColor color, SoundType sound, ToolType tool, float hardness, float resistance) {
-//		return new PaneBlock(AbstractBlock.Properties.create(material, color).sound(sound).harvestTool(tool).harvestLevel(0).hardnessAndResistance(hardness, resistance).notSolid().setAllowsSpawn(ABBlocksBYG::never).setOpaque(ABBlocksBYG::never).setSuffocates(ABBlocksBYG::never).setBlocksVision(ABBlocksBYG::never));
-//	}
 
 	private static HorizontalBarsSlabBlock createHorizontalBarsBlock() {
 		return new HorizontalBarsSlabBlock(AbstractBlock.Properties.of(Material.WOOD, MaterialColor.WOOD).sound(SoundType.WOOD).harvestTool(ToolType.AXE).harvestLevel(0).strength(3.0F, 4.0F).noOcclusion().isValidSpawn(ABBlocksBYG::never).isViewBlocking(ABBlocksBYG::never).isSuffocating(ABBlocksBYG::never).isRedstoneConductor(ABBlocksBYG::never));
 	}
-
-//	private static HorizontalBarsSlabBlock createHorizontalBarsBlock(Material material, MaterialColor color, SoundType sound) {
-//		return new HorizontalBarsSlabBlock(AbstractBlock.Properties.create(material, color).sound(sound).harvestTool(ToolType.AXE).harvestLevel(0).hardnessAndResistance(3.0f, 4.0f).notSolid().setAllowsSpawn(ABBlocksBYG::never).setOpaque(ABBlocksBYG::never).setSuffocates(ABBlocksBYG::never).setBlocksVision(ABBlocksBYG::never));
-//	}
-//
-//	private static HorizontalBarsSlabBlock createHorizontalBarsBlock(Material material, MaterialColor color, SoundType sound, ToolType tool, float hardness, float resistance) {
-//		return new HorizontalBarsSlabBlock(AbstractBlock.Properties.create(material, color).sound(sound).harvestTool(tool).harvestLevel(0).hardnessAndResistance(hardness, resistance).notSolid().setAllowsSpawn(ABBlocksBYG::never).setOpaque(ABBlocksBYG::never).setSuffocates(ABBlocksBYG::never).setBlocksVision(ABBlocksBYG::never));
-//	}
 
 	private static Boolean never(BlockState blockState, IBlockReader blockView, BlockPos blockPos, EntityType<?> entityType) { return false; }
 	private static boolean never(BlockState blockState, IBlockReader blockView, BlockPos blockPos) { return false; }
