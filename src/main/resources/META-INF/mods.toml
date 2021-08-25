@@ -4,18 +4,24 @@ loaderVersion="[35, 36,)" #mandatory
 issueTrackerURL="https://github.com/CodenameRevy/Additional-Bars/issues" #optional
 
 [[mods]] #mandatory
-modId="additionalbarsbyg" #mandatory
-version="${file.jarVersion}" #mandatory
-displayName="Additional Bars (Oh the Biomes you'll go Addon)" #mandatory
-displayURL="codenamerevy.github.io" #optional
-logoFile="logo.png" #optional
-credits='''CodenameRevy (Mod Developer), ruchom4u (Spanish Translations), fantasyair18 (Chinese Traditional (Taiwan) Translations), TheDirectorX, BardinTheDwarf (Russian Translations), Zijuna (German Translations), justmonika (Simple Chinese Translations), mindy15963 (Korean Translations), WadeMason''' #optional
-authors="CodenameRevy" #optional
-description='''Support for Oh The Biomes Youll Go wood types for Additional Bars'''
+    modId="additionalbarsbyg" #mandatory
+    version="${file.jarVersion}" #mandatory
+    displayName="Additional Bars (Oh the Biomes you'll go Addon)" #mandatory
+    displayURL="codenamerevy.github.io" #optional
+    logoFile="logo.png" #optional
+    credits='''CodenameRevy (Mod Developer), ruchom4u (Spanish Translations), fantasyair18 (Chinese Traditional (Taiwan) Translations), TheDirectorX, BardinTheDwarf (Russian Translations), Zijuna (German Translations), justmonika (Simple Chinese Translations), mindy15963 (Korean Translations), WadeMason''' #optional
+    authors="CodenameRevy" #optional
+    description='''Support for Oh The Biomes Youll Go wood types for Additional Bars'''
 
 [[dependencies.additionalbarsbyg]] #optional
     modId="additionalbars" #mandatory
     mandatory=true #mandatory
     versionRange="[2,)" #mandatory
+    ordering="AFTER"
+    side="BOTH"
+[[dependencies.additionalbarsbyg]] #optional
+    modId="byg" #mandatory
+    mandatory=true #mandatory
+    versionRange="[1.2,)" #mandatory
     ordering="AFTER"
     side="BOTH"

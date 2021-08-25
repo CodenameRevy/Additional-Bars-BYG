@@ -1,7 +1,7 @@
-package com.codenamerevy.additionalbarsbyg.client;
+package com.gamma1772.additionalbarsbyg.client;
 
-import com.codenamerevy.additionalbars.common.AdditionalBars;
-import com.codenamerevy.additionalbarsbyg.common.AdditionalBarsBYG;
+import com.gamma1772.additionalbars.common.AdditionalBars;
+import com.gamma1772.additionalbarsbyg.common.AdditionalBarsBYG;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;

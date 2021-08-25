@@ -1,7 +1,7 @@
-package com.codenamerevy.additionalbarsbyg.common.registry;
+package com.gamma1772.additionalbarsbyg.common.registry;
 
-import com.codenamerevy.additionalbars.common.content.block.HorizontalBarsSlabBlock;
-import com.codenamerevy.additionalbarsbyg.common.AdditionalBarsBYG;
+import com.gamma1772.additionalbars.common.content.block.HorizontalBarsSlabBlock;
+import com.gamma1772.additionalbarsbyg.common.AdditionalBarsBYG;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
@@ -138,7 +138,7 @@ public class ABBlocksBYG {
 
 
 	private static PaneBlock createBarsBlock() {
-		return new PaneBlock(AbstractBlock.Properties.create(Material.WOOD, MaterialColor.WOOD).sound(SoundType.WOOD).harvestTool(ToolType.AXE).harvestLevel(0).hardnessAndResistance(3.0F, 4.0F).notSolid().setAllowsSpawn(ABBlocksBYG::never).setOpaque(ABBlocksBYG::never).setSuffocates(ABBlocksBYG::never).setBlocksVision(ABBlocksBYG::never));
+		return new PaneBlock(AbstractBlock.Properties.of(Material.WOOD, MaterialColor.WOOD).sound(SoundType.WOOD).harvestTool(ToolType.AXE).harvestLevel(0).strength(3.0F, 4.0F).noOcclusion().isValidSpawn(ABBlocksBYG::never).isViewBlocking(ABBlocksBYG::never).isSuffocating(ABBlocksBYG::never).isRedstoneConductor(ABBlocksBYG::never));
 	}
 //
 //	private static PaneBlock createBarsBlock(Material material, MaterialColor color, SoundType sound) {
@@ -150,7 +150,7 @@ public class ABBlocksBYG {
 //	}
 
 	private static HorizontalBarsSlabBlock createHorizontalBarsBlock() {
-		return new HorizontalBarsSlabBlock(AbstractBlock.Properties.create(Material.WOOD, MaterialColor.WOOD).sound(SoundType.WOOD).harvestTool(ToolType.AXE).harvestLevel(0).hardnessAndResistance(3.0F, 4.0F).notSolid().setAllowsSpawn(ABBlocksBYG::never).setOpaque(ABBlocksBYG::never).setSuffocates(ABBlocksBYG::never).setBlocksVision(ABBlocksBYG::never));
+		return new HorizontalBarsSlabBlock(AbstractBlock.Properties.of(Material.WOOD, MaterialColor.WOOD).sound(SoundType.WOOD).harvestTool(ToolType.AXE).harvestLevel(0).strength(3.0F, 4.0F).noOcclusion().isValidSpawn(ABBlocksBYG::never).isViewBlocking(ABBlocksBYG::never).isSuffocating(ABBlocksBYG::never).isRedstoneConductor(ABBlocksBYG::never));
 	}
 
 //	private static HorizontalBarsSlabBlock createHorizontalBarsBlock(Material material, MaterialColor color, SoundType sound) {
