@@ -1,6 +1,6 @@
-package com.gamma1772.additionalbarsbyg.common;
+package com.gamma1772.additionalbarsbyg;
 
-import com.gamma1772.additionalbars.common.AdditionalBars;
+import com.codenamerevy.additionalbars.AdditionalBars;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;

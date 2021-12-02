@@ -1,17 +1,20 @@
-package com.gamma1772.additionalbarsbyg.common.registry;
+package com.gamma1772.additionalbarsbyg.registry;
 
-import com.gamma1772.additionalbars.common.content.block.HorizontalBarsSlabBlock;
-import com.gamma1772.additionalbarsbyg.common.AdditionalBarsBYG;
-import net.minecraft.block.*;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.material.MaterialColor;
-import net.minecraft.entity.EntityType;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IBlockReader;
-import net.minecraftforge.common.ToolType;
-import net.minecraftforge.fml.RegistryObject;
+import com.codenamerevy.additionalbars.content.block.HorizontalBarsSlabBlock;
+import com.gamma1772.additionalbarsbyg.AdditionalBarsBYG;
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.IronBarsBlock;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
 
 public class ABBlocksBYG {
 	public static final DeferredRegister<Block> BYG_BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, AdditionalBarsBYG.MODID);
@@ -137,14 +140,14 @@ public class ABBlocksBYG {
 	public static final RegistryObject<Block> HORIZONTAL_CROSSED_EMBUR_BARS = BYG_BLOCKS.register("horizontal_crossed_embur_bars", ABBlocksBYG::createBarsBlock);
 
 
-	private static PaneBlock createBarsBlock() {
-		return new PaneBlock(AbstractBlock.Properties.of(Material.WOOD, MaterialColor.WOOD).sound(SoundType.WOOD).harvestTool(ToolType.AXE).harvestLevel(0).strength(3.0F, 4.0F).noOcclusion().isValidSpawn(ABBlocksBYG::never).isViewBlocking(ABBlocksBYG::never).isSuffocating(ABBlocksBYG::never).isRedstoneConductor(ABBlocksBYG::never));
+	private static IronBarsBlock createBarsBlock() {
+		return new IronBarsBlock(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.WOOD).sound(SoundType.WOOD).strength(3.0F, 4.0F).noOcclusion().isValidSpawn(ABBlocksBYG::never).isViewBlocking(ABBlocksBYG::never).isSuffocating(ABBlocksBYG::never).isRedstoneConductor(ABBlocksBYG::never));
 	}
 
 	private static HorizontalBarsSlabBlock createHorizontalBarsBlock() {
-		return new HorizontalBarsSlabBlock(AbstractBlock.Properties.of(Material.WOOD, MaterialColor.WOOD).sound(SoundType.WOOD).harvestTool(ToolType.AXE).harvestLevel(0).strength(3.0F, 4.0F).noOcclusion().isValidSpawn(ABBlocksBYG::never).isViewBlocking(ABBlocksBYG::never).isSuffocating(ABBlocksBYG::never).isRedstoneConductor(ABBlocksBYG::never));
+		return new HorizontalBarsSlabBlock(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.WOOD).sound(SoundType.WOOD).strength(3.0F, 4.0F).noOcclusion().isValidSpawn(ABBlocksBYG::never).isViewBlocking(ABBlocksBYG::never).isSuffocating(ABBlocksBYG::never).isRedstoneConductor(ABBlocksBYG::never));
 	}
 
-	private static Boolean never(BlockState blockState, IBlockReader blockView, BlockPos blockPos, EntityType<?> entityType) { return false; }
-	private static boolean never(BlockState blockState, IBlockReader blockView, BlockPos blockPos) { return false; }
+	private static Boolean never(BlockState blockState, BlockGetter blockView, BlockPos blockPos, EntityType<?> entityType) { return false; }
+	private static boolean never(BlockState blockState, BlockGetter blockView, BlockPos blockPos) { return false; }
 }
